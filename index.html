@@ -1,0 +1,2074 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Grid</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(30, 48px);
+            grid-template-rows: repeat(16, 48px);
+            grid-gap: 0;
+            width: 1920px;
+            height: 1080px;
+        }
+        .grid-item {
+            width: 48px;
+            height: 48px;
+            position: relative;
+        }
+        .grid-item img {
+            width: 64px;
+            height: 64px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+
+            <div class="grid-item" style="left: 0px; top: -2px; transform: rotate(4.456474316127352deg);">
+                <img src="images/abstract_best_8k_cogvlm_movement_friedel-dzubas_red-flight-1957.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: -3px; transform: rotate(10.284281408489349deg);">
+                <img src="images/abstract_best_8k_cogvlm_contrast_elements_sam-francis_exposition-sam-francis-19-mars-5-mai-1983-poster.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: -4px; transform: rotate(-14.992411697291782deg);">
+                <img src="images/abstract_best_8k_deepseek_proportion_joan-miro_bird-s-flight-in-moonlight.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: 5px; transform: rotate(1.1436288071035605deg);">
+                <img src="images/abstract_best_15k_llava_foreground_background_4_frank-bowling_greenacross-i-2009.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: 4px; transform: rotate(-11.209069823621489deg);">
+                <img src="images/abstract_best_15k_deepseek_symmetry_asymmetry_1_joan-miro_not_detected_227950.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: -1px; transform: rotate(2.16833313899658deg);">
+                <img src="images/abstract_best_25k_cogvlm_balance_elements_al-held_taxi-cab-ii-1959.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: -4px; transform: rotate(-3.387786271412738deg);">
+                <img src="images/abstract_best_15k_cogvlm_symmetry_asymmetry_1_terry-frost_tree-tree-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: 3px; transform: rotate(14.512052946019676deg);">
+                <img src="images/abstract_best_25k_deepseek_focus_point_hans-hofmann_kaleidos-1958.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: 2px; transform: rotate(-13.769270462548143deg);">
+                <img src="images/abstract_best_35k_deepseek_foreground_background_4_terry-frost_yellow-triptych-1959.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: 4px; transform: rotate(7.745465389905132deg);">
+                <img src="images/abstract_best_25k_deepseek_contrast_elements_paul-reed_glm-2005.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: 5px; transform: rotate(14.849163474596587deg);">
+                <img src="images/abstract_best_35k_llava_movement_richard-pousette-dart_opaque-harmony-1943.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: 5px; transform: rotate(3.213477790092707deg);">
+                <img src="images/abstract_best_25k_llava_composition_joan-miro_not_detected_227957.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: 3px; transform: rotate(5.777926202890384deg);">
+                <img src="images/abstract_best_25k_llava_foreground_background_4_elaine-de-kooning_untitled-bull-1973.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: -1px; transform: rotate(-2.6799064752466197deg);">
+                <img src="images/abstract_best_8k_deepseek_contrast_elements_paul-jenkins_not_detected_235727.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 5px; transform: rotate(9.912239741701242deg);">
+                <img src="images/abstract_best_25k_deepseek_symmetry_asymmetry_1_joan-miro_not_detected_227950.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: 0px; transform: rotate(4.244440221201728deg);">
+                <img src="images/abstract_best_15k_cogvlm_composition_sam-francis_tokyo-1974.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: -3px; transform: rotate(13.042342930994039deg);">
+                <img src="images/abstract_best_25k_cogvlm_eye_movement_2_elaine-de-kooning_untitled-bull-1973.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: 5px; transform: rotate(-8.986686637502062deg);">
+                <img src="images/abstract_best_15k_cogvlm_movement_joan-miro_not_detected_227957.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: -5px; transform: rotate(-10.644667430488408deg);">
+                <img src="images/abstract_best_35k_cogvlm_contrast_elements_terry-frost_variations-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: 2px; transform: rotate(-14.014140377382423deg);">
+                <img src="images/abstract_best_35k_llava_composition_joan-miro_not_detected_227950.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: 4px; transform: rotate(10.992864596166285deg);">
+                <img src="images/abstract_best_8k_deepseek_contrast_elements_jackson-pollock_moon-woman-1942(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: -3px; transform: rotate(-10.95779622416844deg);">
+                <img src="images/abstract_best_35k_deepseek_eye_movement_2_friedel-dzubas_red-flight-1957.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: -2px; transform: rotate(3.4724117473382137deg);">
+                <img src="images/abstract_best_8k_deepseek_foreground_background_4_richard-pousette-dart_opaque-harmony-1943.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: -4px; transform: rotate(-11.635872902320386deg);">
+                <img src="images/abstract_best_25k_deepseek_foreground_background_4_richard-pousette-dart_opaque-harmony-1943.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: -1px; transform: rotate(-1.9733423517567292deg);">
+                <img src="images/abstract_best_25k_cogvlm_focus_point_friedel-dzubas_red-flight-1957.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: 5px; transform: rotate(-4.9408027185233045deg);">
+                <img src="images/abstract_best_35k_cogvlm_composition_alexander-liberman_untitled-abstract-1975.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: -3px; transform: rotate(-1.2477787141503391deg);">
+                <img src="images/abstract_best_15k_llava_foreground_background_4_paul-jenkins_not_detected_235696.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: -2px; transform: rotate(8.748938045342744deg);">
+                <img src="images/abstract_best_8k_cogvlm_composition_terry-frost_yellow-triptych-1959.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: 1px; transform: rotate(-11.22815067707476deg);">
+                <img src="images/abstract_best_15k_cogvlm_proportion_alice-baber_wheel-of-day-1971.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: 1px; transform: rotate(-13.679745202015328deg);">
+                <img src="images/abstract_best_15k_cogvlm_focus_point_ronnie-landfield_sunday-afternoon-1969.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: 4px; transform: rotate(6.614311093973228deg);">
+                <img src="images/abstract_best_15k_cogvlm_proportion_joan-miro_bird-s-flight-in-moonlight.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: 5px; transform: rotate(-6.094718516145196deg);">
+                <img src="images/abstract_best_35k_cogvlm_proportion_jimmy-ernst_signifiant-event-note-1980.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: 2px; transform: rotate(-6.850829529916023deg);">
+                <img src="images/abstract_best_25k_llava_focus_point_alexander-liberman_untitled-abstract-1975.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: 2px; transform: rotate(13.057117786542307deg);">
+                <img src="images/abstract_best_15k_llava_eye_movement_2_sam-francis_untitled-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: 4px; transform: rotate(-11.869350924899884deg);">
+                <img src="images/abstract_best_15k_deepseek_movement_henri-matisse_creole-dancer(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: 5px; transform: rotate(11.631870408969718deg);">
+                <img src="images/abstract_best_35k_cogvlm_contrast_elements_taro-yamamoto_untitled-1972.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: 0px; transform: rotate(-1.7038579133821106deg);">
+                <img src="images/abstract_best_8k_cogvlm_focus_point_terry-frost_yellow-triptych-1959.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: 5px; transform: rotate(3.8085574237528803deg);">
+                <img src="images/abstract_best_8k_llava_movement_paul-jenkins_not_detected_235727.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: 0px; transform: rotate(-8.661305970459104deg);">
+                <img src="images/abstract_best_25k_deepseek_proportion_al-held_taxi-cab-ii-1959.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: 5px; transform: rotate(12.274173648880286deg);">
+                <img src="images/abstract_best_15k_cogvlm_contrast_elements_jackson-pollock_the-key(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: 2px; transform: rotate(-13.315796543199202deg);">
+                <img src="images/abstract_best_35k_llava_composition_sam-francis_exposition-sam-francis-19-mars-5-mai-1983-poster.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: -1px; transform: rotate(14.25464101585154deg);">
+                <img src="images/abstract_best_8k_cogvlm_balance_elements_joan-mitchell_river-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: 4px; transform: rotate(3.3266714617544615deg);">
+                <img src="images/abstract_best_25k_llava_symmetry_asymmetry_1_paul-jenkins_not_detected_235727.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: 4px; transform: rotate(-6.251457542969337deg);">
+                <img src="images/abstract_best_25k_llava_composition_elaine-de-kooning_untitled-bull-1973.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: -2px; transform: rotate(-5.513173012329878deg);">
+                <img src="images/abstract_best_25k_cogvlm_proportion_sam-francis_tokyo-1974.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 0px; transform: rotate(-11.110256671623997deg);">
+                <img src="images/abstract_best_35k_llava_balance_elements_joan-miro_not_detected_227950.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: -1px; transform: rotate(5.444784468209988deg);">
+                <img src="images/abstract_best_15k_llava_balance_elements_mostafa-dashti_untitled-1998.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: 2px; transform: rotate(4.960969151777455deg);">
+                <img src="images/abstract_best_15k_cogvlm_movement_mostafa-dashti_untitled-1998.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: -3px; transform: rotate(2.6838175332011147deg);">
+                <img src="images/abstract_best_15k_deepseek_focus_point_joan-miro_bird-s-flight-in-moonlight.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: -4px; transform: rotate(2.794735037242898deg);">
+                <img src="images/abstract_best_35k_deepseek_eye_movement_2_sam-francis_untitled-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 5px; transform: rotate(-5.256543405741272deg);">
+                <img src="images/abstract_best_35k_deepseek_composition_joan-miro_not_detected_227950.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: -2px; transform: rotate(-5.963219135652491deg);">
+                <img src="images/abstract_best_35k_deepseek_balance_elements_joan-miro_bird-s-flight-in-moonlight.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: 2px; transform: rotate(1.1926664411825136deg);">
+                <img src="images/abstract_best_15k_cogvlm_movement_taro-yamamoto_untitled-1972.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: -2px; transform: rotate(-8.498780150991006deg);">
+                <img src="images/abstract_best_15k_deepseek_symmetry_asymmetry_1_bradley-walker-tomlin_number-13-1949.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: 2px; transform: rotate(-6.272814004102486deg);">
+                <img src="images/abstract_best_35k_deepseek_balance_elements_al-held_taxi-cab-ii-1959.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: -2px; transform: rotate(-2.5440618135638235deg);">
+                <img src="images/abstract_best_8k_llava_movement_jackson-pollock_moon-woman-1942(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: 3px; transform: rotate(-0.928784757521333deg);">
+                <img src="images/abstract_cogvlm_15k_cogvlm_focus_point_jackson-pollock_the-key(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: 4px; transform: rotate(-0.5150777311769659deg);">
+                <img src="images/abstract_best_8k_llava_movement_henri-matisse_creole-dancer(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: -3px; transform: rotate(8.225440279436015deg);">
+                <img src="images/abstract_best_25k_llava_composition_paul-jenkins_not_detected_235727.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: -5px; transform: rotate(-0.5999053851765055deg);">
+                <img src="images/abstract_cogvlm_15k_cogvlm_focus_point_jimmy-ernst_signifiant-event-note-1980.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: 2px; transform: rotate(10.003160860923714deg);">
+                <img src="images/abstract_best_35k_llava_contrast_elements_jackson-pollock_moon-woman-1942(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: -5px; transform: rotate(-3.025665235534472deg);">
+                <img src="images/abstract_best_35k_cogvlm_contrast_elements_vasile-dobrian_the-fish.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: -5px; transform: rotate(-1.572847091682668deg);">
+                <img src="images/abstract_best_8k_cogvlm_proportion_joan-mitchell_river-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: -4px; transform: rotate(1.7442837960996798deg);">
+                <img src="images/abstract_best_25k_deepseek_symmetry_asymmetry_1_jackson-pollock_moon-woman-1942(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 3px; transform: rotate(-7.302485712817298deg);">
+                <img src="images/abstract_best_8k_deepseek_symmetry_asymmetry_1_lee-krasner_embrace-1974.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: 4px; transform: rotate(2.8381779211881337deg);">
+                <img src="images/abstract_best_35k_cogvlm_symmetry_asymmetry_1_sam-gilliam_stand-1973.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: 3px; transform: rotate(-4.4770838873782335deg);">
+                <img src="images/abstract_best_15k_llava_composition_paul-reed_glm-2005.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: 2px; transform: rotate(14.307380878882821deg);">
+                <img src="images/abstract_best_15k_cogvlm_balance_elements_conrad-marca-relli_pamplona.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: 5px; transform: rotate(5.307308350847798deg);">
+                <img src="images/abstract_best_15k_cogvlm_movement_cy-twombly_untitled-part-viii.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: 5px; transform: rotate(14.102501768445816deg);">
+                <img src="images/abstract_cogvlm_15k_cogvlm_contrast_elements_joan-miro_bird-s-flight-in-moonlight.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: -5px; transform: rotate(0.8768592967622766deg);">
+                <img src="images/abstract_best_35k_deepseek_symmetry_asymmetry_1_joan-miro_bird-s-flight-in-moonlight.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: 2px; transform: rotate(-12.244341594087594deg);">
+                <img src="images/abstract_best_8k_deepseek_contrast_elements_elaine-de-kooning_untitled-bull-1973.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: 2px; transform: rotate(10.979457738796206deg);">
+                <img src="images/abstract_best_8k_deepseek_focus_point_gerhard-richter_ludorff.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: 0px; transform: rotate(-5.521201431027256deg);">
+                <img src="images/abstract_best_15k_llava_composition_sam-francis_tokyo-1974.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: 3px; transform: rotate(-5.634986737553021deg);">
+                <img src="images/abstract_best_8k_deepseek_movement_friedel-dzubas_red-flight-1957.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: -2px; transform: rotate(-5.592265070688477deg);">
+                <img src="images/abstract_best_35k_llava_contrast_elements_sam-francis_all-red-1964.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: -3px; transform: rotate(4.625141580974205deg);">
+                <img src="images/abstract_best_35k_llava_focus_point_sam-francis_tokyo-1974.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: 5px; transform: rotate(2.346985727569109deg);">
+                <img src="images/abstract_best_25k_llava_proportion_sam-francis_all-red-1964.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: 2px; transform: rotate(-11.9813824616718deg);">
+                <img src="images/abstract_best_8k_llava_focus_point_cy-twombly_untitled-part-viii.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: -2px; transform: rotate(10.810617335201695deg);">
+                <img src="images/abstract_best_25k_deepseek_symmetry_asymmetry_1_sam-francis_untitled-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: 5px; transform: rotate(-0.798322830994616deg);">
+                <img src="images/abstract_best_15k_deepseek_composition_joan-miro_not_detected_227957.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 3px; transform: rotate(5.776091576683257deg);">
+                <img src="images/abstract_best_35k_cogvlm_focus_point_conrad-marca-relli_pamplona.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: 2px; transform: rotate(13.137398916969197deg);">
+                <img src="images/abstract_best_25k_llava_proportion_taro-yamamoto_untitled-1972.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: 1px; transform: rotate(2.3931192697422254deg);">
+                <img src="images/abstract_best_15k_cogvlm_balance_elements_sam-francis_all-red-1964.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 4px; transform: rotate(9.488755478176806deg);">
+                <img src="images/abstract_best_35k_cogvlm_balance_elements_vasile-dobrian_the-fish.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: 3px; transform: rotate(-11.434545237401787deg);">
+                <img src="images/abstract_best_8k_llava_balance_elements_morris-louis_untitled-1956.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: -3px; transform: rotate(-13.996224155827607deg);">
+                <img src="images/abstract_best_8k_deepseek_eye_movement_2_bradley-walker-tomlin_number-13-1949.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: 3px; transform: rotate(-9.608465571890704deg);">
+                <img src="images/abstract_cogvlm_15k_cogvlm_eye_movement_2_sam-francis_untitled-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: -2px; transform: rotate(7.648337224793437deg);">
+                <img src="images/abstract_cogvlm_15k_cogvlm_balance_elements_sam-francis_all-red-1964.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: 1px; transform: rotate(3.134551082364368deg);">
+                <img src="images/abstract_best_25k_deepseek_eye_movement_2_sam-francis_all-red-1964.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: 0px; transform: rotate(-4.402374030877292deg);">
+                <img src="images/abstract_best_8k_deepseek_proportion_jackson-pollock_the-key(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: -3px; transform: rotate(-6.847265309986232deg);">
+                <img src="images/abstract_best_8k_cogvlm_balance_elements_sam-francis_tokyo-1974.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: -3px; transform: rotate(10.500265676624231deg);">
+                <img src="images/abstract_best_15k_deepseek_movement_alexander-liberman_untitled-abstract-1975.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: -1px; transform: rotate(6.350641913681688deg);">
+                <img src="images/abstract_best_35k_deepseek_symmetry_asymmetry_1_morris-louis_untitled-1956.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: 4px; transform: rotate(-6.758758637638655deg);">
+                <img src="images/abstract_best_15k_deepseek_focus_point_lee-krasner_embrace-1974.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: -2px; transform: rotate(1.4064021416783206deg);">
+                <img src="images/abstract_best_15k_deepseek_focus_point_henri-matisse_the-lagoon-1947.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: 0px; transform: rotate(-7.6314878394837145deg);">
+                <img src="images/abstract_best_15k_deepseek_focus_point_walasse-ting_white-butterflies-sleep-on-a-violet-bed-1970.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: 0px; transform: rotate(-7.0847246701293365deg);">
+                <img src="images/abstract_best_8k_deepseek_foreground_background_4_paul-jenkins_not_detected_235727.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: -1px; transform: rotate(1.8383698150605916deg);">
+                <img src="images/abstract_best_15k_deepseek_composition_vasile-dobrian_the-fish.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: 3px; transform: rotate(5.698575931956462deg);">
+                <img src="images/abstract_best_35k_cogvlm_eye_movement_2_terry-frost_variations-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 3px; transform: rotate(-14.276596822527262deg);">
+                <img src="images/abstract_best_15k_llava_composition_jackson-pollock_the-key(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: 4px; transform: rotate(3.328154598420607deg);">
+                <img src="images/abstract_best_8k_llava_contrast_elements_henri-matisse_creole-dancer(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 5px; transform: rotate(-7.318341639202691deg);">
+                <img src="images/abstract_best_8k_llava_symmetry_asymmetry_1_friedel-dzubas_red-flight-1957.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: 0px; transform: rotate(-1.915126390381646deg);">
+                <img src="images/abstract_best_25k_deepseek_contrast_elements_ronnie-landfield_sunday-afternoon-1969.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: -1px; transform: rotate(3.5565626781253137deg);">
+                <img src="images/abstract_best_15k_cogvlm_focus_point_walasse-ting_white-butterflies-sleep-on-a-violet-bed-1970.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: 4px; transform: rotate(-3.039789374217257deg);">
+                <img src="images/abstract_best_25k_deepseek_symmetry_asymmetry_1_henri-matisse_creole-dancer(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: 3px; transform: rotate(3.6536260301251424deg);">
+                <img src="images/abstract_cogvlm_15k_cogvlm_focus_point_al-held_taxi-cab-ii-1959.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: -2px; transform: rotate(-5.889495235742089deg);">
+                <img src="images/abstract_best_35k_llava_balance_elements_terry-frost_yellow-triptych-1959.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: 4px; transform: rotate(-3.624759322118077deg);">
+                <img src="images/abstract_best_35k_cogvlm_contrast_elements_conrad-marca-relli_pamplona.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: 1px; transform: rotate(11.212549755759323deg);">
+                <img src="images/abstract_best_15k_deepseek_symmetry_asymmetry_1_joan-mitchell_river-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: -3px; transform: rotate(-1.7170689249752478deg);">
+                <img src="images/abstract_best_35k_cogvlm_composition_terry-frost_yellow-triptych-1959.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: 1px; transform: rotate(-6.519987836168076deg);">
+                <img src="images/abstract_best_15k_deepseek_focus_point_terry-frost_variations-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: 5px; transform: rotate(6.229419748326247deg);">
+                <img src="images/abstract_best_25k_llava_composition_sam-francis_all-red-1964.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: 1px; transform: rotate(-10.8235393899741deg);">
+                <img src="images/abstract_best_25k_cogvlm_focus_point_mostafa-dashti_untitled-1998.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: 2px; transform: rotate(10.150596742927338deg);">
+                <img src="images/abstract_best_15k_deepseek_focus_point_paul-jenkins_not_detected_235696.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: -5px; transform: rotate(-8.002177921381918deg);">
+                <img src="images/abstract_best_15k_deepseek_foreground_background_4_cy-twombly_untitled-part-viii.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: 3px; transform: rotate(3.141088186247977deg);">
+                <img src="images/abstract_best_25k_cogvlm_movement_alice-baber_wheel-of-day-1971.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: 3px; transform: rotate(7.3821679481547875deg);">
+                <img src="images/abstract_cogvlm_15k_cogvlm_composition_alice-baber_wheel-of-day-1971.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: 2px; transform: rotate(5.302811655917193deg);">
+                <img src="images/abstract_best_25k_deepseek_symmetry_asymmetry_1_mostafa-dashti_untitled-1998.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: 5px; transform: rotate(-10.714686918578625deg);">
+                <img src="images/abstract_best_35k_deepseek_eye_movement_2_taro-yamamoto_untitled-1972.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: -4px; transform: rotate(1.327718611206631deg);">
+                <img src="images/abstract_best_35k_deepseek_symmetry_asymmetry_1_joan-miro_not_detected_227950.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: -1px; transform: rotate(-8.610745658729803deg);">
+                <img src="images/abstract_cogvlm_15k_cogvlm_eye_movement_2_gerhard-richter_ludorff.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 4px; transform: rotate(-2.2348475879834098deg);">
+                <img src="images/abstract_best_15k_llava_balance_elements_jackson-pollock_moon-woman-1942(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: 1px; transform: rotate(12.31964366473747deg);">
+                <img src="images/abstract_best_15k_deepseek_movement_jimmy-ernst_signifiant-event-note-1980.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: 3px; transform: rotate(-12.50260226049356deg);">
+                <img src="images/abstract_best_35k_cogvlm_balance_elements_morris-louis_untitled-1956.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: 4px; transform: rotate(-4.086264882641611deg);">
+                <img src="images/abstract_best_25k_cogvlm_movement_sam-francis_all-red-1964.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: -4px; transform: rotate(-12.91533117683413deg);">
+                <img src="images/abstract_best_15k_cogvlm_symmetry_asymmetry_1_joan-miro_not_detected_227950.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: -5px; transform: rotate(0.15713470265060892deg);">
+                <img src="images/abstract_best_35k_llava_focus_point_henri-matisse_the-lagoon-1947.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: -4px; transform: rotate(2.1348518803677763deg);">
+                <img src="images/abstract_best_8k_cogvlm_proportion_bradley-walker-tomlin_number-13-1949.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: -2px; transform: rotate(2.7593771338305295deg);">
+                <img src="images/abstract_best_25k_llava_balance_elements_sam-francis_exposition-sam-francis-19-mars-5-mai-1983-poster.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: 3px; transform: rotate(-8.595208611234499deg);">
+                <img src="images/abstract_best_8k_llava_focus_point_lee-krasner_embrace-1974.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: -3px; transform: rotate(-2.9363413724372815deg);">
+                <img src="images/abstract_best_15k_cogvlm_movement_hans-hofmann_kaleidos-1958.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: 5px; transform: rotate(-4.392250659684041deg);">
+                <img src="images/abstract_best_35k_deepseek_contrast_elements_sam-gilliam_stand-1973.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: 0px; transform: rotate(-10.053321321328577deg);">
+                <img src="images/abstract_best_15k_llava_foreground_background_4_lee-krasner_embrace-1974.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: 0px; transform: rotate(-14.473706765961238deg);">
+                <img src="images/abstract_best_35k_cogvlm_focus_point_hans-hofmann_kaleidos-1958.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: 4px; transform: rotate(-6.401440299059184deg);">
+                <img src="images/abstract_best_8k_deepseek_foreground_background_4_frank-bowling_greenacross-i-2009.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: 5px; transform: rotate(-0.18298096881464865deg);">
+                <img src="images/abstract_best_35k_cogvlm_focus_point_frank-bowling_greenacross-i-2009.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: 0px; transform: rotate(2.9518165838818256deg);">
+                <img src="images/abstract_best_8k_deepseek_foreground_background_4_terry-frost_tree-tree-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: 4px; transform: rotate(-13.373215789353752deg);">
+                <img src="images/abstract_best_35k_llava_foreground_background_4_gerhard-richter_ludorff.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: -1px; transform: rotate(10.085764565695793deg);">
+                <img src="images/abstract_best_35k_llava_contrast_elements_bradley-walker-tomlin_number-13-1949.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: 1px; transform: rotate(14.009974871445312deg);">
+                <img src="images/abstract_best_8k_deepseek_composition_joan-miro_bird-s-flight-in-moonlight.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: 0px; transform: rotate(2.896725883599096deg);">
+                <img src="images/abstract_best_8k_cogvlm_eye_movement_2_richard-pousette-dart_opaque-harmony-1943.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: -1px; transform: rotate(8.21583576351119deg);">
+                <img src="images/abstract_best_8k_llava_movement_sam-francis_exposition-sam-francis-19-mars-5-mai-1983-poster.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: 4px; transform: rotate(-8.401231512810902deg);">
+                <img src="images/abstract_best_15k_llava_movement_sam-francis_untitled-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 4px; transform: rotate(-12.36685739476803deg);">
+                <img src="images/abstract_best_15k_llava_contrast_elements_sam-gilliam_stand-1973.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: 1px; transform: rotate(11.135112137222432deg);">
+                <img src="images/abstract_best_15k_cogvlm_focus_point_vasile-dobrian_the-fish.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: 2px; transform: rotate(13.83810359554965deg);">
+                <img src="images/abstract_best_8k_cogvlm_symmetry_asymmetry_1_cy-twombly_untitled-part-viii.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: -3px; transform: rotate(3.579509405851347deg);">
+                <img src="images/abstract_best_8k_deepseek_symmetry_asymmetry_1_bradley-walker-tomlin_number-13-1949.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: -2px; transform: rotate(-3.4803330429543635deg);">
+                <img src="images/abstract_best_15k_llava_proportion_mostafa-dashti_untitled-1998.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: 0px; transform: rotate(7.247398508246562deg);">
+                <img src="images/abstract_best_25k_cogvlm_composition_sam-gilliam_stand-1973.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: -2px; transform: rotate(12.309522249530936deg);">
+                <img src="images/abstract_best_35k_deepseek_contrast_elements_joan-miro_not_detected_227950.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: -2px; transform: rotate(1.6699557060809767deg);">
+                <img src="images/abstract_best_8k_deepseek_proportion_taro-yamamoto_untitled-1972.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: 3px; transform: rotate(-10.788790185291644deg);">
+                <img src="images/abstract_best_35k_llava_balance_elements_friedel-dzubas_red-flight-1957.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: 4px; transform: rotate(-0.030859795842303583deg);">
+                <img src="images/abstract_best_25k_cogvlm_proportion_terry-frost_tree-tree-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: -5px; transform: rotate(0.43600613943722344deg);">
+                <img src="images/abstract_best_8k_cogvlm_composition_terry-frost_variations-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: -4px; transform: rotate(1.807427368679278deg);">
+                <img src="images/abstract_best_35k_llava_focus_point_friedel-dzubas_red-flight-1957.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: -2px; transform: rotate(7.1839929456048495deg);">
+                <img src="images/abstract_best_15k_llava_contrast_elements_alice-baber_wheel-of-day-1971.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 5px; transform: rotate(-14.130562939390266deg);">
+                <img src="images/abstract_best_25k_deepseek_movement_joan-mitchell_river-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 1px; transform: rotate(13.281293752529109deg);">
+                <img src="images/abstract_cogvlm_15k_cogvlm_composition_terry-frost_yellow-triptych-1959.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: 0px; transform: rotate(-2.195740844165279deg);">
+                <img src="images/abstract_best_8k_cogvlm_composition_jackson-pollock_moon-woman-1942(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: -1px; transform: rotate(3.512391608654365deg);">
+                <img src="images/abstract_best_15k_llava_balance_elements_richard-pousette-dart_opaque-harmony-1943.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: 4px; transform: rotate(-10.270173606501952deg);">
+                <img src="images/abstract_best_8k_deepseek_balance_elements_sam-francis_untitled-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: 0px; transform: rotate(-5.355534908473844deg);">
+                <img src="images/abstract_best_25k_cogvlm_symmetry_asymmetry_1_joan-miro_bird-s-flight-in-moonlight.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: -1px; transform: rotate(4.178684248905483deg);">
+                <img src="images/abstract_best_35k_llava_eye_movement_2_jimmy-ernst_signifiant-event-note-1980.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: 5px; transform: rotate(4.7661387268787685deg);">
+                <img src="images/abstract_best_8k_cogvlm_movement_hans-hofmann_kaleidos-1958.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: -2px; transform: rotate(-9.98528317860712deg);">
+                <img src="images/abstract_best_8k_llava_proportion_joan-mitchell_river-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: -3px; transform: rotate(-8.385995424014286deg);">
+                <img src="images/abstract_best_25k_llava_movement_terry-frost_tree-tree-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: 2px; transform: rotate(-9.032383512701028deg);">
+                <img src="images/abstract_best_35k_cogvlm_proportion_conrad-marca-relli_pamplona.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: 1px; transform: rotate(-9.382640521094263deg);">
+                <img src="images/abstract_best_35k_llava_eye_movement_2_sam-francis_all-red-1964.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: 4px; transform: rotate(-11.631778356629011deg);">
+                <img src="images/abstract_best_35k_llava_focus_point_sam-francis_exposition-sam-francis-19-mars-5-mai-1983-poster.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: -2px; transform: rotate(-7.568942049722666deg);">
+                <img src="images/abstract_best_8k_deepseek_focus_point_hans-hofmann_kaleidos-1958.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: 5px; transform: rotate(-5.4147801973892005deg);">
+                <img src="images/abstract_cogvlm_15k_cogvlm_composition_conrad-marca-relli_pamplona.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: 3px; transform: rotate(-7.901826291362961deg);">
+                <img src="images/abstract_cogvlm_15k_cogvlm_balance_elements_elaine-de-kooning_untitled-bull-1973.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: 0px; transform: rotate(7.207020104138422deg);">
+                <img src="images/abstract_best_15k_deepseek_balance_elements_lee-krasner_embrace-1974.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: 0px; transform: rotate(-11.966703973394832deg);">
+                <img src="images/abstract_best_35k_llava_proportion_brice-marden_letter-about-rocks-3-blue-ground-2010.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: 5px; transform: rotate(-3.329228393310098deg);">
+                <img src="images/abstract_best_15k_deepseek_eye_movement_2_hans-hofmann_kaleidos-1958.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: 2px; transform: rotate(-12.334023200400246deg);">
+                <img src="images/abstract_best_15k_llava_eye_movement_2_terry-frost_variations-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: 5px; transform: rotate(-2.0452538004294283deg);">
+                <img src="images/abstract_best_15k_deepseek_balance_elements_elaine-de-kooning_untitled-bull-1973.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: 1px; transform: rotate(5.733798884527285deg);">
+                <img src="images/abstract_best_25k_deepseek_composition_terry-frost_yellow-triptych-1959.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: -3px; transform: rotate(3.760279406069383deg);">
+                <img src="images/abstract_best_15k_llava_proportion_walasse-ting_white-butterflies-sleep-on-a-violet-bed-1970.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: 2px; transform: rotate(-7.205691663064112deg);">
+                <img src="images/abstract_best_15k_llava_composition_hans-hofmann_kaleidos-1958.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: 1px; transform: rotate(-10.291200258663974deg);">
+                <img src="images/abstract_best_15k_llava_movement_brice-marden_letter-about-rocks-3-blue-ground-2010.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: -2px; transform: rotate(2.118054559588586deg);">
+                <img src="images/abstract_best_15k_llava_foreground_background_4_henri-matisse_the-lagoon-1947.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: -5px; transform: rotate(6.1997534707483695deg);">
+                <img src="images/abstract_best_25k_cogvlm_eye_movement_2_vasile-dobrian_the-fish.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: -3px; transform: rotate(-0.11407279182015628deg);">
+                <img src="images/abstract_best_15k_cogvlm_movement_henri-matisse_the-lagoon-1947.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: 2px; transform: rotate(-13.80092332118249deg);">
+                <img src="images/abstract_best_8k_deepseek_movement_bradley-walker-tomlin_number-13-1949.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: 2px; transform: rotate(11.11856850891564deg);">
+                <img src="images/abstract_best_8k_deepseek_balance_elements_cy-twombly_untitled-part-viii.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 4px; transform: rotate(-0.08842112089627108deg);">
+                <img src="images/abstract_best_25k_cogvlm_composition_joan-miro_not_detected_227950.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: 1px; transform: rotate(-7.534544061376507deg);">
+                <img src="images/abstract_cogvlm_15k_cogvlm_balance_elements_sam-francis_exposition-sam-francis-19-mars-5-mai-1983-poster.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: 0px; transform: rotate(0.6641916672165813deg);">
+                <img src="images/abstract_best_15k_cogvlm_contrast_elements_terry-frost_tree-tree-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 5px; transform: rotate(9.576978847711235deg);">
+                <img src="images/abstract_best_35k_cogvlm_focus_point_taro-yamamoto_untitled-1972.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: 0px; transform: rotate(-13.287418410331151deg);">
+                <img src="images/abstract_best_8k_cogvlm_composition_conrad-marca-relli_pamplona.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: -1px; transform: rotate(0.4516182140525977deg);">
+                <img src="images/abstract_best_15k_llava_focus_point_sam-gilliam_stand-1973.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: -4px; transform: rotate(-11.715567653153451deg);">
+                <img src="images/abstract_best_15k_deepseek_proportion_jimmy-ernst_signifiant-event-note-1980.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: 0px; transform: rotate(9.0226437934604deg);">
+                <img src="images/abstract_best_35k_cogvlm_contrast_elements_richard-pousette-dart_opaque-harmony-1943.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: -4px; transform: rotate(-12.787991254972756deg);">
+                <img src="images/abstract_best_8k_deepseek_movement_walasse-ting_white-butterflies-sleep-on-a-violet-bed-1970.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: -4px; transform: rotate(14.863755244061757deg);">
+                <img src="images/abstract_best_35k_llava_foreground_background_4_mostafa-dashti_untitled-1998.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: 1px; transform: rotate(0.26502739788027263deg);">
+                <img src="images/abstract_best_15k_llava_composition_lee-krasner_embrace-1974.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: -1px; transform: rotate(-1.7533015907732459deg);">
+                <img src="images/abstract_cogvlm_15k_cogvlm_balance_elements_jackson-pollock_the-key(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: 0px; transform: rotate(2.4185358890359865deg);">
+                <img src="images/abstract_best_25k_cogvlm_focus_point_paul-jenkins_not_detected_235727.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: 4px; transform: rotate(9.43021565746221deg);">
+                <img src="images/abstract_best_15k_cogvlm_balance_elements_terry-frost_tree-tree-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: 0px; transform: rotate(5.208388889073408deg);">
+                <img src="images/abstract_best_8k_cogvlm_contrast_elements_joan-mitchell_river-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: 1px; transform: rotate(3.0783209222216428deg);">
+                <img src="images/abstract_best_8k_llava_contrast_elements_sam-francis_all-red-1964.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: -1px; transform: rotate(-6.374158025494557deg);">
+                <img src="images/abstract_best_25k_llava_eye_movement_2_al-held_taxi-cab-ii-1959.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 4px; transform: rotate(-0.03661618384459686deg);">
+                <img src="images/abstract_best_8k_cogvlm_symmetry_asymmetry_1_brice-marden_letter-about-rocks-3-blue-ground-2010.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: -2px; transform: rotate(-5.389651517029979deg);">
+                <img src="images/abstract_best_35k_cogvlm_balance_elements_elaine-de-kooning_untitled-bull-1973.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: -5px; transform: rotate(-10.073841871447721deg);">
+                <img src="images/abstract_best_15k_cogvlm_movement_morris-louis_untitled-1956.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: 1px; transform: rotate(0.5337056714700132deg);">
+                <img src="images/abstract_best_15k_llava_symmetry_asymmetry_1_brice-marden_letter-about-rocks-3-blue-ground-2010.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 4px; transform: rotate(-13.629374217710637deg);">
+                <img src="images/abstract_best_35k_deepseek_eye_movement_2_alice-baber_wheel-of-day-1971.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: -3px; transform: rotate(-6.020208416687858deg);">
+                <img src="images/abstract_best_15k_deepseek_proportion_henri-matisse_creole-dancer(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: 5px; transform: rotate(4.05998475037789deg);">
+                <img src="images/abstract_cogvlm_15k_cogvlm_eye_movement_2_walasse-ting_white-butterflies-sleep-on-a-violet-bed-1970.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: -1px; transform: rotate(-13.18522254562546deg);">
+                <img src="images/abstract_best_25k_llava_focus_point_vasile-dobrian_the-fish.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: -1px; transform: rotate(-12.649560012467301deg);">
+                <img src="images/abstract_best_8k_cogvlm_eye_movement_2_morris-louis_untitled-1956.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: 2px; transform: rotate(-10.97576799143121deg);">
+                <img src="images/abstract_best_15k_cogvlm_balance_elements_jackson-pollock_moon-woman-1942(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: -3px; transform: rotate(4.278313346768183deg);">
+                <img src="images/abstract_best_15k_llava_composition_alice-baber_wheel-of-day-1971.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 4px; transform: rotate(-12.445569152357798deg);">
+                <img src="images/abstract_best_35k_cogvlm_movement_sam-francis_exposition-sam-francis-19-mars-5-mai-1983-poster.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: -3px; transform: rotate(11.419776751454187deg);">
+                <img src="images/abstract_best_15k_cogvlm_contrast_elements_joan-mitchell_river-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: 3px; transform: rotate(-12.866107857391466deg);">
+                <img src="images/abstract_best_35k_deepseek_composition_vasile-dobrian_the-fish.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: -1px; transform: rotate(5.89725676184964deg);">
+                <img src="images/abstract_best_8k_cogvlm_composition_cy-twombly_untitled-part-viii.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: -1px; transform: rotate(4.438449834934108deg);">
+                <img src="images/abstract_best_8k_llava_eye_movement_2_alexander-liberman_untitled-abstract-1975.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: 3px; transform: rotate(-13.848019905661193deg);">
+                <img src="images/abstract_best_25k_cogvlm_foreground_background_4_vasile-dobrian_the-fish.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 4px; transform: rotate(-4.809666535706349deg);">
+                <img src="images/abstract_best_15k_deepseek_symmetry_asymmetry_1_paul-jenkins_not_detected_235727.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: 0px; transform: rotate(11.50119804798836deg);">
+                <img src="images/abstract_best_35k_cogvlm_movement_jackson-pollock_the-key(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: 3px; transform: rotate(12.97906757613216deg);">
+                <img src="images/abstract_best_15k_deepseek_proportion_bradley-walker-tomlin_number-13-1949.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: 4px; transform: rotate(-10.335509160144777deg);">
+                <img src="images/abstract_best_35k_llava_focus_point_sam-francis_all-red-1964.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: -2px; transform: rotate(1.6444204374616795deg);">
+                <img src="images/abstract_best_25k_cogvlm_symmetry_asymmetry_1_taro-yamamoto_untitled-1972.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: -2px; transform: rotate(-7.646186403939394deg);">
+                <img src="images/abstract_best_8k_cogvlm_composition_paul-reed_glm-2005.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: -2px; transform: rotate(10.271337439989804deg);">
+                <img src="images/abstract_best_15k_llava_movement_ronnie-landfield_sunday-afternoon-1969.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: 4px; transform: rotate(10.429288265082718deg);">
+                <img src="images/abstract_best_35k_llava_composition_jackson-pollock_the-key(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: 2px; transform: rotate(-13.551375228504037deg);">
+                <img src="images/abstract_best_8k_cogvlm_focus_point_terry-frost_tree-tree-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: -1px; transform: rotate(-13.76657719506403deg);">
+                <img src="images/abstract_best_8k_llava_composition_conrad-marca-relli_pamplona.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 3px; transform: rotate(-4.826160245546973deg);">
+                <img src="images/abstract_cogvlm_15k_cogvlm_composition_brice-marden_letter-about-rocks-3-blue-ground-2010.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: 0px; transform: rotate(2.701784108480826deg);">
+                <img src="images/abstract_best_35k_llava_contrast_elements_friedel-dzubas_red-flight-1957.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: 2px; transform: rotate(7.051683472883649deg);">
+                <img src="images/abstract_best_8k_llava_foreground_background_4_alexander-liberman_untitled-abstract-1975.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: -2px; transform: rotate(3.6464557313529014deg);">
+                <img src="images/abstract_best_25k_llava_focus_point_henri-matisse_creole-dancer(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: 5px; transform: rotate(9.89646560145179deg);">
+                <img src="images/abstract_best_8k_deepseek_contrast_elements_jimmy-ernst_signifiant-event-note-1980.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: 0px; transform: rotate(-4.494128034954766deg);">
+                <img src="images/abstract_best_8k_deepseek_proportion_paul-jenkins_not_detected_235696.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: 3px; transform: rotate(-11.225234532644931deg);">
+                <img src="images/abstract_best_35k_deepseek_proportion_paul-reed_glm-2005.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: 5px; transform: rotate(13.419131897251503deg);">
+                <img src="images/abstract_best_35k_llava_focus_point_lee-krasner_embrace-1974.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: -4px; transform: rotate(-8.281161094932537deg);">
+                <img src="images/abstract_best_35k_cogvlm_eye_movement_2_bradley-walker-tomlin_number-13-1949.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: 1px; transform: rotate(-9.142310857606052deg);">
+                <img src="images/abstract_best_8k_cogvlm_foreground_background_4_brice-marden_letter-about-rocks-3-blue-ground-2010.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: 4px; transform: rotate(-4.987354591771453deg);">
+                <img src="images/abstract_best_15k_deepseek_movement_jackson-pollock_moon-woman-1942(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: -4px; transform: rotate(-9.613961438588909deg);">
+                <img src="images/abstract_cogvlm_15k_cogvlm_composition_morris-louis_untitled-1956.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: 3px; transform: rotate(-9.341990338142123deg);">
+                <img src="images/abstract_best_8k_llava_symmetry_asymmetry_1_mostafa-dashti_untitled-1998.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 3px; transform: rotate(-5.179672837470415deg);">
+                <img src="images/abstract_best_15k_llava_focus_point_jackson-pollock_the-key(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: 1px; transform: rotate(10.807430528483032deg);">
+                <img src="images/abstract_best_35k_llava_composition_bradley-walker-tomlin_number-13-1949.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: 2px; transform: rotate(-7.331548274456241deg);">
+                <img src="images/abstract_best_15k_cogvlm_contrast_elements_walasse-ting_white-butterflies-sleep-on-a-violet-bed-1970.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: -5px; transform: rotate(-6.0699894769577565deg);">
+                <img src="images/abstract_best_25k_cogvlm_composition_brice-marden_letter-about-rocks-3-blue-ground-2010.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: 5px; transform: rotate(-14.454014337151513deg);">
+                <img src="images/abstract_best_35k_cogvlm_eye_movement_2_sam-francis_exposition-sam-francis-19-mars-5-mai-1983-poster.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: 5px; transform: rotate(-3.337824501594657deg);">
+                <img src="images/abstract_cogvlm_15k_cogvlm_contrast_elements_alice-baber_wheel-of-day-1971.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: -2px; transform: rotate(-11.357605826140409deg);">
+                <img src="images/abstract_best_25k_llava_movement_hans-hofmann_kaleidos-1958.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: 2px; transform: rotate(7.8300404847688725deg);">
+                <img src="images/abstract_best_8k_llava_symmetry_asymmetry_1_henri-matisse_the-lagoon-1947.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: 3px; transform: rotate(12.54157303334916deg);">
+                <img src="images/abstract_best_25k_cogvlm_composition_joan-mitchell_river-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 0px; transform: rotate(-1.655046618415195deg);">
+                <img src="images/abstract_best_8k_deepseek_contrast_elements_paul-reed_glm-2005.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: -1px; transform: rotate(-2.2903306746719725deg);">
+                <img src="images/abstract_best_8k_cogvlm_contrast_elements_joan-miro_not_detected_227957.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: -3px; transform: rotate(-9.401570735068104deg);">
+                <img src="images/abstract_best_15k_cogvlm_movement_vasile-dobrian_the-fish.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: -2px; transform: rotate(11.152572788506355deg);">
+                <img src="images/abstract_best_25k_llava_proportion_sam-francis_untitled-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: -4px; transform: rotate(-3.003253491248728deg);">
+                <img src="images/abstract_best_25k_llava_eye_movement_2_sam-gilliam_stand-1973.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: 0px; transform: rotate(-7.040984855314348deg);">
+                <img src="images/abstract_best_8k_llava_focus_point_taro-yamamoto_untitled-1972.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: 5px; transform: rotate(-0.45682666626835555deg);">
+                <img src="images/abstract_best_25k_deepseek_symmetry_asymmetry_1_richard-pousette-dart_opaque-harmony-1943.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: 0px; transform: rotate(-14.95468628969297deg);">
+                <img src="images/abstract_best_35k_llava_proportion_hans-hofmann_kaleidos-1958.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: 4px; transform: rotate(7.13798250856393deg);">
+                <img src="images/abstract_best_15k_deepseek_composition_sam-francis_exposition-sam-francis-19-mars-5-mai-1983-poster.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: 4px; transform: rotate(-0.8238805608122988deg);">
+                <img src="images/abstract_best_8k_llava_foreground_background_4_elaine-de-kooning_untitled-bull-1973.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: 2px; transform: rotate(-13.647471069460495deg);">
+                <img src="images/abstract_best_15k_deepseek_foreground_background_4_terry-frost_variations-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: 2px; transform: rotate(-1.9860504941886443deg);">
+                <img src="images/abstract_best_15k_llava_eye_movement_2_friedel-dzubas_red-flight-1957.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: 2px; transform: rotate(4.387074349235704deg);">
+                <img src="images/abstract_best_8k_cogvlm_foreground_background_4_henri-matisse_the-lagoon-1947.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: 3px; transform: rotate(-4.0805890900486155deg);">
+                <img src="images/abstract_best_15k_cogvlm_balance_elements_lee-krasner_embrace-1974.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: 2px; transform: rotate(5.470818235406238deg);">
+                <img src="images/abstract_best_15k_llava_symmetry_asymmetry_1_joan-miro_bird-s-flight-in-moonlight.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: -4px; transform: rotate(-11.748528653015125deg);">
+                <img src="images/abstract_best_35k_deepseek_balance_elements_friedel-dzubas_red-flight-1957.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: 5px; transform: rotate(-13.47431289899322deg);">
+                <img src="images/abstract_best_35k_llava_composition_henri-matisse_the-lagoon-1947.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: -5px; transform: rotate(12.105694306962427deg);">
+                <img src="images/abstract_best_15k_llava_focus_point_walasse-ting_white-butterflies-sleep-on-a-violet-bed-1970.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: -1px; transform: rotate(-0.13494730021769286deg);">
+                <img src="images/abstract_cogvlm_15k_cogvlm_composition_richard-pousette-dart_opaque-harmony-1943.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: 4px; transform: rotate(9.531347468185611deg);">
+                <img src="images/abstract_best_15k_cogvlm_contrast_elements_joan-miro_bird-s-flight-in-moonlight.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: -4px; transform: rotate(-1.9389624381841788deg);">
+                <img src="images/abstract_best_15k_cogvlm_symmetry_asymmetry_1_jimmy-ernst_signifiant-event-note-1980.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 2px; transform: rotate(-1.1516977579016903deg);">
+                <img src="images/abstract_best_15k_cogvlm_proportion_henri-matisse_creole-dancer(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: -4px; transform: rotate(-10.273307267218113deg);">
+                <img src="images/abstract_best_15k_cogvlm_composition_walasse-ting_white-butterflies-sleep-on-a-violet-bed-1970.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: 4px; transform: rotate(-9.018443860096617deg);">
+                <img src="images/abstract_best_8k_deepseek_balance_elements_paul-jenkins_not_detected_235727.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 2px; transform: rotate(-10.392590046592813deg);">
+                <img src="images/abstract_best_15k_llava_proportion_alice-baber_wheel-of-day-1971.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: -3px; transform: rotate(5.31747987932782deg);">
+                <img src="images/abstract_best_35k_deepseek_composition_jackson-pollock_moon-woman-1942(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: 5px; transform: rotate(-0.18755772541906168deg);">
+                <img src="images/abstract_best_25k_llava_symmetry_asymmetry_1_henri-matisse_creole-dancer(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: 5px; transform: rotate(-3.4930387306882675deg);">
+                <img src="images/abstract_best_8k_cogvlm_focus_point_morris-louis_untitled-1956.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 1px; transform: rotate(2.143211808564452deg);">
+                <img src="images/abstract_best_15k_cogvlm_focus_point_henri-matisse_the-lagoon-1947.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: -4px; transform: rotate(8.783677372060065deg);">
+                <img src="images/abstract_best_25k_cogvlm_composition_lee-krasner_embrace-1974.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: 3px; transform: rotate(8.993541844318198deg);">
+                <img src="images/abstract_best_35k_llava_balance_elements_taro-yamamoto_untitled-1972.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: 2px; transform: rotate(-10.692391933214651deg);">
+                <img src="images/abstract_best_35k_llava_contrast_elements_joan-miro_not_detected_227950.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: 5px; transform: rotate(-13.535915174906942deg);">
+                <img src="images/abstract_best_25k_llava_proportion_sam-francis_tokyo-1974.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: -1px; transform: rotate(-4.377498554672403deg);">
+                <img src="images/abstract_best_35k_deepseek_composition_frank-bowling_greenacross-i-2009.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: 1px; transform: rotate(-8.700270642964867deg);">
+                <img src="images/abstract_best_15k_llava_foreground_background_4_conrad-marca-relli_pamplona.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: -4px; transform: rotate(9.746705519666662deg);">
+                <img src="images/abstract_best_8k_llava_foreground_background_4_sam-francis_exposition-sam-francis-19-mars-5-mai-1983-poster.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: -2px; transform: rotate(9.27411093498008deg);">
+                <img src="images/abstract_best_25k_llava_composition_sam-francis_untitled-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: 5px; transform: rotate(5.014011645108042deg);">
+                <img src="images/abstract_best_15k_cogvlm_composition_jackson-pollock_the-key(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: 0px; transform: rotate(1.9425530541650602deg);">
+                <img src="images/abstract_best_35k_deepseek_proportion_sam-gilliam_stand-1973.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: 4px; transform: rotate(3.5069745574426356deg);">
+                <img src="images/abstract_best_35k_llava_focus_point_alice-baber_wheel-of-day-1971.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: 4px; transform: rotate(-0.10003024444593933deg);">
+                <img src="images/abstract_best_25k_cogvlm_balance_elements_paul-jenkins_not_detected_235696.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: 1px; transform: rotate(3.2694499371140964deg);">
+                <img src="images/abstract_best_8k_cogvlm_symmetry_asymmetry_1_taro-yamamoto_untitled-1972.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: -3px; transform: rotate(-0.536221115476982deg);">
+                <img src="images/abstract_best_15k_llava_proportion_gerhard-richter_ludorff.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 1px; transform: rotate(-12.75456371163694deg);">
+                <img src="images/abstract_best_35k_llava_symmetry_asymmetry_1_lee-krasner_embrace-1974.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: 0px; transform: rotate(6.158542822371892deg);">
+                <img src="images/abstract_best_35k_deepseek_foreground_background_4_al-held_taxi-cab-ii-1959.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: 5px; transform: rotate(-9.064940462596415deg);">
+                <img src="images/abstract_best_25k_cogvlm_contrast_elements_jimmy-ernst_signifiant-event-note-1980.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 4px; transform: rotate(-10.21850175222056deg);">
+                <img src="images/abstract_best_15k_llava_contrast_elements_hans-hofmann_kaleidos-1958.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: -4px; transform: rotate(5.137833057203089deg);">
+                <img src="images/abstract_best_15k_llava_focus_point_terry-frost_variations-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: -4px; transform: rotate(-1.7228947563936465deg);">
+                <img src="images/abstract_best_8k_llava_symmetry_asymmetry_1_alice-baber_wheel-of-day-1971.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: -2px; transform: rotate(-8.240854378235438deg);">
+                <img src="images/abstract_cogvlm_15k_cogvlm_eye_movement_2_friedel-dzubas_red-flight-1957.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: -5px; transform: rotate(5.740461419865486deg);">
+                <img src="images/abstract_best_8k_llava_eye_movement_2_paul-jenkins_not_detected_235727.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: -1px; transform: rotate(10.743368141834669deg);">
+                <img src="images/abstract_cogvlm_15k_cogvlm_focus_point_frank-bowling_greenacross-i-2009.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: -5px; transform: rotate(-9.58093683501287deg);">
+                <img src="images/abstract_best_35k_llava_proportion_elaine-de-kooning_untitled-bull-1973.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: 2px; transform: rotate(14.41102374860488deg);">
+                <img src="images/abstract_best_8k_llava_contrast_elements_vasile-dobrian_the-fish.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: 5px; transform: rotate(-1.4299538241027427deg);">
+                <img src="images/abstract_best_35k_llava_proportion_friedel-dzubas_red-flight-1957.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 2px; transform: rotate(-1.5921108958256198deg);">
+                <img src="images/abstract_best_15k_llava_eye_movement_2_taro-yamamoto_untitled-1972.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: 5px; transform: rotate(14.451051436969038deg);">
+                <img src="images/abstract_best_15k_llava_movement_joan-miro_not_detected_227950.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: -2px; transform: rotate(-5.65053439274253deg);">
+                <img src="images/abstract_best_15k_llava_focus_point_henri-matisse_the-lagoon-1947.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: 0px; transform: rotate(-13.606263735791753deg);">
+                <img src="images/abstract_best_15k_llava_eye_movement_2_walasse-ting_white-butterflies-sleep-on-a-violet-bed-1970.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: -4px; transform: rotate(9.96122886086167deg);">
+                <img src="images/abstract_best_25k_cogvlm_foreground_background_4_terry-frost_tree-tree-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: 5px; transform: rotate(10.810814389439873deg);">
+                <img src="images/abstract_best_8k_cogvlm_eye_movement_2_frank-bowling_greenacross-i-2009.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: -3px; transform: rotate(13.749368017273191deg);">
+                <img src="images/abstract_best_15k_deepseek_contrast_elements_sam-gilliam_stand-1973.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: -3px; transform: rotate(-10.155751042593941deg);">
+                <img src="images/abstract_best_15k_llava_eye_movement_2_elaine-de-kooning_untitled-bull-1973.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: 4px; transform: rotate(4.2867167228085705deg);">
+                <img src="images/abstract_best_35k_cogvlm_focus_point_joan-miro_not_detected_227950.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: 0px; transform: rotate(-0.22588905233703827deg);">
+                <img src="images/abstract_best_15k_deepseek_contrast_elements_morris-louis_untitled-1956.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: -5px; transform: rotate(6.832451376649264deg);">
+                <img src="images/abstract_best_8k_llava_proportion_al-held_taxi-cab-ii-1959.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: -4px; transform: rotate(-2.5942402185435878deg);">
+                <img src="images/abstract_best_8k_llava_eye_movement_2_sam-francis_exposition-sam-francis-19-mars-5-mai-1983-poster.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: 2px; transform: rotate(6.392216880949128deg);">
+                <img src="images/abstract_best_8k_deepseek_contrast_elements_henri-matisse_the-lagoon-1947.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: 4px; transform: rotate(6.097029044366298deg);">
+                <img src="images/abstract_best_15k_llava_eye_movement_2_alice-baber_wheel-of-day-1971.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: -5px; transform: rotate(5.3517156707671525deg);">
+                <img src="images/abstract_best_15k_deepseek_symmetry_asymmetry_1_joan-miro_not_detected_227957.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: -4px; transform: rotate(5.30164309971887deg);">
+                <img src="images/abstract_best_15k_llava_composition_henri-matisse_the-lagoon-1947.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 2px; transform: rotate(-13.469186822271665deg);">
+                <img src="images/abstract_best_25k_deepseek_eye_movement_2_jackson-pollock_the-key(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: 3px; transform: rotate(9.757457475530263deg);">
+                <img src="images/abstract_best_35k_llava_proportion_sam-francis_untitled-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: 3px; transform: rotate(7.499181667424871deg);">
+                <img src="images/abstract_best_15k_llava_eye_movement_2_lee-krasner_embrace-1974.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: -1px; transform: rotate(9.697460598580296deg);">
+                <img src="images/abstract_best_35k_cogvlm_eye_movement_2_cy-twombly_untitled-part-viii.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: 5px; transform: rotate(1.847765745183466deg);">
+                <img src="images/abstract_best_15k_llava_composition_joan-miro_bird-s-flight-in-moonlight.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: 2px; transform: rotate(1.5563792518027064deg);">
+                <img src="images/abstract_best_25k_cogvlm_symmetry_asymmetry_1_friedel-dzubas_red-flight-1957.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: 4px; transform: rotate(9.983056863600055deg);">
+                <img src="images/abstract_best_25k_deepseek_focus_point_joan-miro_not_detected_227957.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: 4px; transform: rotate(4.656648340425921deg);">
+                <img src="images/abstract_best_35k_cogvlm_focus_point_ronnie-landfield_sunday-afternoon-1969.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 0px; transform: rotate(11.608166696268103deg);">
+                <img src="images/abstract_best_35k_cogvlm_foreground_background_4_sam-francis_tokyo-1974.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: -5px; transform: rotate(0.18534914530782842deg);">
+                <img src="images/abstract_best_15k_llava_focus_point_conrad-marca-relli_pamplona.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: -3px; transform: rotate(-11.727876133640454deg);">
+                <img src="images/abstract_best_15k_deepseek_movement_bradley-walker-tomlin_number-13-1949.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: -3px; transform: rotate(-6.090880646452456deg);">
+                <img src="images/abstract_best_35k_llava_movement_lee-krasner_embrace-1974.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: -5px; transform: rotate(1.7975054090224099deg);">
+                <img src="images/abstract_best_35k_llava_symmetry_asymmetry_1_sam-francis_untitled-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: -4px; transform: rotate(-12.752659974420242deg);">
+                <img src="images/abstract_best_35k_deepseek_composition_paul-jenkins_not_detected_235727.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: 2px; transform: rotate(-0.17735969175800825deg);">
+                <img src="images/abstract_best_8k_deepseek_proportion_sam-francis_all-red-1964.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: -5px; transform: rotate(14.718632671909866deg);">
+                <img src="images/abstract_best_25k_cogvlm_foreground_background_4_alexander-liberman_untitled-abstract-1975.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: 0px; transform: rotate(6.221752757811927deg);">
+                <img src="images/abstract_best_15k_cogvlm_proportion_jackson-pollock_the-key(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: -4px; transform: rotate(12.284998708703224deg);">
+                <img src="images/abstract_best_15k_deepseek_focus_point_joan-miro_not_detected_227957.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: 0px; transform: rotate(-1.613562171500769deg);">
+                <img src="images/abstract_best_35k_llava_focus_point_joan-miro_bird-s-flight-in-moonlight.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: 2px; transform: rotate(11.246503580803303deg);">
+                <img src="images/abstract_best_25k_llava_composition_sam-francis_tokyo-1974.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: -2px; transform: rotate(9.159134815175218deg);">
+                <img src="images/abstract_best_15k_llava_movement_alice-baber_wheel-of-day-1971.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: 4px; transform: rotate(2.446556630308436deg);">
+                <img src="images/abstract_best_8k_deepseek_eye_movement_2_joan-miro_not_detected_227957.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: 1px; transform: rotate(12.066955503663127deg);">
+                <img src="images/abstract_best_35k_llava_foreground_background_4_jimmy-ernst_signifiant-event-note-1980.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: 4px; transform: rotate(-1.1075503743227078deg);">
+                <img src="images/abstract_best_25k_deepseek_composition_sam-francis_exposition-sam-francis-19-mars-5-mai-1983-poster.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: -4px; transform: rotate(10.121198178626436deg);">
+                <img src="images/abstract_best_8k_llava_focus_point_al-held_taxi-cab-ii-1959.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: -4px; transform: rotate(-1.9631617459624007deg);">
+                <img src="images/abstract_best_25k_deepseek_foreground_background_4_sam-gilliam_stand-1973.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: -2px; transform: rotate(2.762387572577257deg);">
+                <img src="images/abstract_best_35k_cogvlm_proportion_joan-miro_not_detected_227950.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: 2px; transform: rotate(-6.270387854763499deg);">
+                <img src="images/abstract_best_15k_cogvlm_movement_sam-francis_tokyo-1974.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: -2px; transform: rotate(5.548118025027225deg);">
+                <img src="images/abstract_best_15k_llava_composition_walasse-ting_white-butterflies-sleep-on-a-violet-bed-1970.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: 1px; transform: rotate(-11.357876960023503deg);">
+                <img src="images/abstract_best_35k_cogvlm_focus_point_lee-krasner_embrace-1974.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: -2px; transform: rotate(3.4274815897322455deg);">
+                <img src="images/abstract_best_25k_llava_symmetry_asymmetry_1_taro-yamamoto_untitled-1972.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: 0px; transform: rotate(-1.528661789903543deg);">
+                <img src="images/abstract_best_25k_deepseek_movement_al-held_taxi-cab-ii-1959.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: -2px; transform: rotate(-12.91049624800445deg);">
+                <img src="images/abstract_best_8k_deepseek_movement_conrad-marca-relli_pamplona.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: 1px; transform: rotate(-0.5230435348044828deg);">
+                <img src="images/abstract_best_35k_deepseek_contrast_elements_richard-pousette-dart_opaque-harmony-1943.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: -2px; transform: rotate(1.9538281754460094deg);">
+                <img src="images/abstract_best_25k_llava_foreground_background_4_gerhard-richter_ludorff.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: -1px; transform: rotate(-8.112419612464077deg);">
+                <img src="images/abstract_best_8k_deepseek_symmetry_asymmetry_1_paul-reed_glm-2005.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: -5px; transform: rotate(12.170314230439878deg);">
+                <img src="images/abstract_best_8k_cogvlm_composition_sam-francis_tokyo-1974.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: 5px; transform: rotate(-2.036148067566886deg);">
+                <img src="images/abstract_best_25k_llava_movement_friedel-dzubas_red-flight-1957.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: 0px; transform: rotate(14.325743461246596deg);">
+                <img src="images/abstract_best_35k_llava_foreground_background_4_sam-francis_all-red-1964.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: -1px; transform: rotate(-0.8421397178963268deg);">
+                <img src="images/abstract_best_25k_deepseek_balance_elements_sam-francis_exposition-sam-francis-19-mars-5-mai-1983-poster.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: 2px; transform: rotate(5.188932661953903deg);">
+                <img src="images/abstract_best_25k_cogvlm_symmetry_asymmetry_1_hans-hofmann_kaleidos-1958.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: -5px; transform: rotate(-13.375301461939596deg);">
+                <img src="images/abstract_best_15k_llava_symmetry_asymmetry_1_alexander-liberman_untitled-abstract-1975.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 1px; transform: rotate(7.773852890179832deg);">
+                <img src="images/abstract_best_25k_llava_contrast_elements_paul-jenkins_not_detected_235727.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: 3px; transform: rotate(9.878555392381031deg);">
+                <img src="images/abstract_best_25k_deepseek_movement_friedel-dzubas_red-flight-1957.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: 5px; transform: rotate(-12.921507360937502deg);">
+                <img src="images/abstract_best_15k_cogvlm_eye_movement_2_paul-jenkins_not_detected_235696.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: -3px; transform: rotate(-7.489722684730903deg);">
+                <img src="images/abstract_best_35k_deepseek_eye_movement_2_elaine-de-kooning_untitled-bull-1973.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: 2px; transform: rotate(11.907964952156565deg);">
+                <img src="images/abstract_best_25k_deepseek_movement_richard-pousette-dart_opaque-harmony-1943.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: 1px; transform: rotate(13.908383734579356deg);">
+                <img src="images/abstract_best_8k_deepseek_balance_elements_vasile-dobrian_the-fish.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: 0px; transform: rotate(4.530484367963577deg);">
+                <img src="images/abstract_best_25k_deepseek_proportion_vasile-dobrian_the-fish.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: -1px; transform: rotate(-14.58317052135294deg);">
+                <img src="images/abstract_best_8k_deepseek_movement_taro-yamamoto_untitled-1972.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: -2px; transform: rotate(2.7143513954647deg);">
+                <img src="images/abstract_best_35k_cogvlm_foreground_background_4_elaine-de-kooning_untitled-bull-1973.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: -4px; transform: rotate(-5.7999521397929765deg);">
+                <img src="images/abstract_best_15k_llava_composition_jimmy-ernst_signifiant-event-note-1980.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: 2px; transform: rotate(-4.3345829234854065deg);">
+                <img src="images/abstract_best_25k_deepseek_eye_movement_2_hans-hofmann_kaleidos-1958.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: 4px; transform: rotate(-0.515143228084936deg);">
+                <img src="images/abstract_best_8k_deepseek_focus_point_morris-louis_untitled-1956.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: 3px; transform: rotate(-10.142506273182779deg);">
+                <img src="images/abstract_best_15k_deepseek_foreground_background_4_alice-baber_wheel-of-day-1971.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: 0px; transform: rotate(8.901419163112251deg);">
+                <img src="images/abstract_best_15k_cogvlm_foreground_background_4_cy-twombly_untitled-part-viii.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: 4px; transform: rotate(-12.324698652939606deg);">
+                <img src="images/abstract_best_8k_cogvlm_movement_cy-twombly_untitled-part-viii.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: -5px; transform: rotate(-11.304556502876224deg);">
+                <img src="images/abstract_best_35k_cogvlm_movement_morris-louis_untitled-1956.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: -1px; transform: rotate(2.149374304395632deg);">
+                <img src="images/abstract_best_35k_llava_eye_movement_2_lee-krasner_embrace-1974.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: 3px; transform: rotate(8.254820003936494deg);">
+                <img src="images/abstract_best_35k_deepseek_foreground_background_4_bradley-walker-tomlin_number-13-1949.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: 2px; transform: rotate(5.954191679149162deg);">
+                <img src="images/abstract_best_15k_llava_eye_movement_2_paul-reed_glm-2005.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: -2px; transform: rotate(12.046516937166693deg);">
+                <img src="images/abstract_best_15k_cogvlm_proportion_alexander-liberman_untitled-abstract-1975.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: -3px; transform: rotate(9.692544700686888deg);">
+                <img src="images/abstract_best_8k_deepseek_balance_elements_henri-matisse_creole-dancer(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: 3px; transform: rotate(13.33520812660937deg);">
+                <img src="images/abstract_best_25k_deepseek_balance_elements_terry-frost_tree-tree-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: -1px; transform: rotate(2.126358693550948deg);">
+                <img src="images/abstract_best_15k_llava_balance_elements_conrad-marca-relli_pamplona.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: -1px; transform: rotate(11.450499311511155deg);">
+                <img src="images/abstract_best_8k_cogvlm_movement_bradley-walker-tomlin_number-13-1949.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: -1px; transform: rotate(-12.70292509546674deg);">
+                <img src="images/abstract_best_35k_cogvlm_symmetry_asymmetry_1_sam-francis_all-red-1964.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: 0px; transform: rotate(-0.4185321928750838deg);">
+                <img src="images/abstract_best_15k_cogvlm_symmetry_asymmetry_1_terry-frost_yellow-triptych-1959.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: 1px; transform: rotate(1.0367954505389179deg);">
+                <img src="images/abstract_best_35k_deepseek_contrast_elements_paul-jenkins_not_detected_235696.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: -2px; transform: rotate(-2.2294073288098986deg);">
+                <img src="images/abstract_cogvlm_15k_cogvlm_eye_movement_2_sam-gilliam_stand-1973.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: -2px; transform: rotate(14.366112876214132deg);">
+                <img src="images/abstract_best_8k_deepseek_symmetry_asymmetry_1_cy-twombly_untitled-part-viii.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: 0px; transform: rotate(11.49302184348592deg);">
+                <img src="images/abstract_best_25k_cogvlm_balance_elements_frank-bowling_greenacross-i-2009.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 5px; transform: rotate(-13.847162723957712deg);">
+                <img src="images/abstract_best_25k_cogvlm_focus_point_sam-francis_exposition-sam-francis-19-mars-5-mai-1983-poster.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: -3px; transform: rotate(13.878935941935282deg);">
+                <img src="images/abstract_best_15k_cogvlm_composition_conrad-marca-relli_pamplona.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: 1px; transform: rotate(-7.873104983634198deg);">
+                <img src="images/abstract_best_25k_llava_symmetry_asymmetry_1_frank-bowling_greenacross-i-2009.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: -3px; transform: rotate(12.62852087853068deg);">
+                <img src="images/abstract_best_15k_deepseek_composition_ronnie-landfield_sunday-afternoon-1969.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: 1px; transform: rotate(6.05283502229743deg);">
+                <img src="images/abstract_best_35k_llava_composition_sam-francis_all-red-1964.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: 1px; transform: rotate(10.829809318695336deg);">
+                <img src="images/abstract_best_15k_deepseek_balance_elements_mostafa-dashti_untitled-1998.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: -1px; transform: rotate(-10.232041735942477deg);">
+                <img src="images/abstract_cogvlm_15k_cogvlm_contrast_elements_mostafa-dashti_untitled-1998.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: -5px; transform: rotate(14.331748100744583deg);">
+                <img src="images/abstract_best_15k_deepseek_eye_movement_2_terry-frost_tree-tree-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: -4px; transform: rotate(1.3922872678924918deg);">
+                <img src="images/abstract_best_15k_llava_focus_point_bradley-walker-tomlin_number-13-1949.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 2px; transform: rotate(6.0019400167737125deg);">
+                <img src="images/abstract_cogvlm_15k_cogvlm_contrast_elements_morris-louis_untitled-1956.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: 1px; transform: rotate(1.1174329878669305deg);">
+                <img src="images/abstract_best_25k_llava_proportion_cy-twombly_untitled-part-viii.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: -4px; transform: rotate(-13.822828611648962deg);">
+                <img src="images/abstract_best_8k_deepseek_composition_taro-yamamoto_untitled-1972.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 0px; transform: rotate(13.545936157750845deg);">
+                <img src="images/abstract_best_8k_llava_contrast_elements_joan-miro_not_detected_227950.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: 3px; transform: rotate(7.836435679666529deg);">
+                <img src="images/abstract_best_35k_cogvlm_focus_point_joan-mitchell_river-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: -2px; transform: rotate(8.608476382440731deg);">
+                <img src="images/abstract_best_25k_cogvlm_eye_movement_2_ronnie-landfield_sunday-afternoon-1969.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: -1px; transform: rotate(1.895402970206586deg);">
+                <img src="images/abstract_best_25k_llava_focus_point_sam-francis_exposition-sam-francis-19-mars-5-mai-1983-poster.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: -3px; transform: rotate(12.427075748699831deg);">
+                <img src="images/abstract_best_8k_deepseek_proportion_brice-marden_letter-about-rocks-3-blue-ground-2010.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: -5px; transform: rotate(-13.484886226481697deg);">
+                <img src="images/abstract_best_15k_deepseek_balance_elements_alice-baber_wheel-of-day-1971.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: -4px; transform: rotate(2.093298582163957deg);">
+                <img src="images/abstract_best_35k_deepseek_movement_joan-miro_not_detected_227950.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: -1px; transform: rotate(6.8710706762167035deg);">
+                <img src="images/abstract_best_15k_llava_movement_gerhard-richter_ludorff.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 1px; transform: rotate(6.285675807148291deg);">
+                <img src="images/abstract_best_25k_deepseek_proportion_walasse-ting_white-butterflies-sleep-on-a-violet-bed-1970.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: 2px; transform: rotate(14.448767150310143deg);">
+                <img src="images/abstract_best_25k_cogvlm_symmetry_asymmetry_1_sam-francis_untitled-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: -4px; transform: rotate(-12.713533883293879deg);">
+                <img src="images/abstract_best_35k_deepseek_movement_sam-gilliam_stand-1973.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: -3px; transform: rotate(11.864672355947288deg);">
+                <img src="images/abstract_best_25k_cogvlm_foreground_background_4_joan-miro_not_detected_227950.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: -2px; transform: rotate(0.9931600288682105deg);">
+                <img src="images/abstract_best_8k_deepseek_eye_movement_2_taro-yamamoto_untitled-1972.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: -4px; transform: rotate(2.157661978386553deg);">
+                <img src="images/abstract_best_8k_deepseek_balance_elements_henri-matisse_the-lagoon-1947.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: -2px; transform: rotate(-6.68266932186013deg);">
+                <img src="images/abstract_best_25k_llava_focus_point_hans-hofmann_kaleidos-1958.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: 1px; transform: rotate(6.923634754100917deg);">
+                <img src="images/abstract_cogvlm_15k_cogvlm_eye_movement_2_henri-matisse_the-lagoon-1947.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: -4px; transform: rotate(-13.740979415710223deg);">
+                <img src="images/abstract_best_35k_llava_proportion_terry-frost_variations-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: -4px; transform: rotate(14.63936747548524deg);">
+                <img src="images/abstract_best_35k_deepseek_eye_movement_2_bradley-walker-tomlin_number-13-1949.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: -5px; transform: rotate(3.0400670410884203deg);">
+                <img src="images/abstract_best_8k_cogvlm_eye_movement_2_paul-jenkins_not_detected_235696.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: -3px; transform: rotate(10.365883033335319deg);">
+                <img src="images/abstract_best_15k_deepseek_eye_movement_2_joan-miro_bird-s-flight-in-moonlight.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: -3px; transform: rotate(9.821077569783437deg);">
+                <img src="images/abstract_best_8k_deepseek_focus_point_alexander-liberman_untitled-abstract-1975.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: -3px; transform: rotate(-0.8700866089996335deg);">
+                <img src="images/abstract_cogvlm_15k_cogvlm_eye_movement_2_frank-bowling_greenacross-i-2009.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: 3px; transform: rotate(0.23519426805438037deg);">
+                <img src="images/abstract_best_35k_llava_eye_movement_2_paul-jenkins_not_detected_235696.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: -3px; transform: rotate(-2.1557538382209547deg);">
+                <img src="images/abstract_best_35k_cogvlm_composition_frank-bowling_greenacross-i-2009.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: -1px; transform: rotate(-3.8556864031435527deg);">
+                <img src="images/abstract_best_8k_cogvlm_eye_movement_2_terry-frost_yellow-triptych-1959.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: -2px; transform: rotate(-1.2404940414526209deg);">
+                <img src="images/abstract_best_8k_deepseek_contrast_elements_brice-marden_letter-about-rocks-3-blue-ground-2010.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: -5px; transform: rotate(13.110345932713518deg);">
+                <img src="images/abstract_best_8k_cogvlm_balance_elements_paul-jenkins_not_detected_235727.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: -5px; transform: rotate(5.620959384520823deg);">
+                <img src="images/abstract_best_8k_llava_eye_movement_2_paul-reed_glm-2005.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: 3px; transform: rotate(-2.470830880977825deg);">
+                <img src="images/abstract_best_15k_llava_focus_point_al-held_taxi-cab-ii-1959.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: 2px; transform: rotate(4.266955439276774deg);">
+                <img src="images/abstract_best_15k_llava_balance_elements_gerhard-richter_ludorff.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: -1px; transform: rotate(12.41023246796943deg);">
+                <img src="images/abstract_best_25k_llava_proportion_conrad-marca-relli_pamplona.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: 2px; transform: rotate(3.966901399197603deg);">
+                <img src="images/abstract_best_35k_cogvlm_proportion_henri-matisse_the-lagoon-1947.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: -3px; transform: rotate(11.707615824790818deg);">
+                <img src="images/abstract_best_8k_deepseek_focus_point_terry-frost_tree-tree-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 1px; transform: rotate(-13.011071757822819deg);">
+                <img src="images/abstract_best_8k_deepseek_eye_movement_2_sam-francis_all-red-1964.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: -3px; transform: rotate(-13.114270970361053deg);">
+                <img src="images/abstract_best_35k_deepseek_proportion_sam-francis_all-red-1964.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: -2px; transform: rotate(10.180649610164075deg);">
+                <img src="images/abstract_best_35k_deepseek_focus_point_paul-reed_glm-2005.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: -4px; transform: rotate(-0.7292826975061182deg);">
+                <img src="images/abstract_best_35k_deepseek_foreground_background_4_mostafa-dashti_untitled-1998.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: 0px; transform: rotate(-2.2977621089609848deg);">
+                <img src="images/abstract_best_8k_deepseek_symmetry_asymmetry_1_joan-miro_bird-s-flight-in-moonlight.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: 2px; transform: rotate(8.549606823907759deg);">
+                <img src="images/abstract_best_35k_llava_foreground_background_4_richard-pousette-dart_opaque-harmony-1943.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: -3px; transform: rotate(4.238624109701497deg);">
+                <img src="images/abstract_best_15k_cogvlm_composition_alexander-liberman_untitled-abstract-1975.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: 1px; transform: rotate(-10.169674534515227deg);">
+                <img src="images/abstract_cogvlm_15k_cogvlm_contrast_elements_conrad-marca-relli_pamplona.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: -4px; transform: rotate(1.9836148442667003deg);">
+                <img src="images/abstract_best_8k_llava_eye_movement_2_terry-frost_tree-tree-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: -5px; transform: rotate(10.194894467696209deg);">
+                <img src="images/abstract_best_8k_deepseek_movement_jackson-pollock_moon-woman-1942(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: 1px; transform: rotate(-13.081240617050863deg);">
+                <img src="images/abstract_best_25k_cogvlm_eye_movement_2_frank-bowling_greenacross-i-2009.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 3px; transform: rotate(-12.885409389477449deg);">
+                <img src="images/abstract_best_15k_llava_composition_henri-matisse_creole-dancer(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: 3px; transform: rotate(14.681312800289462deg);">
+                <img src="images/abstract_best_35k_cogvlm_proportion_sam-francis_exposition-sam-francis-19-mars-5-mai-1983-poster.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: 2px; transform: rotate(13.642762378669147deg);">
+                <img src="images/abstract_best_8k_llava_balance_elements_conrad-marca-relli_pamplona.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: 4px; transform: rotate(-14.728430101106444deg);">
+                <img src="images/abstract_best_25k_deepseek_contrast_elements_henri-matisse_creole-dancer(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: -2px; transform: rotate(-3.142904896899129deg);">
+                <img src="images/abstract_best_8k_cogvlm_movement_joan-miro_bird-s-flight-in-moonlight.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: -5px; transform: rotate(-6.8963964799914805deg);">
+                <img src="images/abstract_best_15k_deepseek_contrast_elements_lee-krasner_embrace-1974.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: -4px; transform: rotate(-5.548016208703395deg);">
+                <img src="images/abstract_best_25k_deepseek_focus_point_paul-jenkins_not_detected_235727.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: -4px; transform: rotate(11.693790012452535deg);">
+                <img src="images/abstract_best_35k_llava_balance_elements_ronnie-landfield_sunday-afternoon-1969.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: 2px; transform: rotate(-3.2243960683625357deg);">
+                <img src="images/abstract_best_35k_llava_proportion_vasile-dobrian_the-fish.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: -2px; transform: rotate(2.2624016942747147deg);">
+                <img src="images/abstract_best_8k_cogvlm_composition_henri-matisse_creole-dancer(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: 3px; transform: rotate(-4.330507152392608deg);">
+                <img src="images/abstract_best_8k_llava_eye_movement_2_frank-bowling_greenacross-i-2009.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: 5px; transform: rotate(-2.9542638674102424deg);">
+                <img src="images/abstract_best_15k_llava_balance_elements_brice-marden_letter-about-rocks-3-blue-ground-2010.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: -5px; transform: rotate(-0.9213712886932548deg);">
+                <img src="images/abstract_best_8k_deepseek_contrast_elements_joan-miro_not_detected_227950.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: -3px; transform: rotate(-9.192017626073525deg);">
+                <img src="images/abstract_best_35k_deepseek_contrast_elements_joan-mitchell_river-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: 3px; transform: rotate(-5.300057953348393deg);">
+                <img src="images/abstract_cogvlm_15k_cogvlm_composition_jackson-pollock_the-key(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: -5px; transform: rotate(7.484806187076671deg);">
+                <img src="images/abstract_best_8k_llava_movement_hans-hofmann_kaleidos-1958.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: -4px; transform: rotate(-6.449589332026521deg);">
+                <img src="images/abstract_best_35k_cogvlm_symmetry_asymmetry_1_joan-mitchell_river-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: 1px; transform: rotate(-4.657008205963303deg);">
+                <img src="images/abstract_best_35k_deepseek_contrast_elements_joan-miro_bird-s-flight-in-moonlight.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: -2px; transform: rotate(-11.217805388526333deg);">
+                <img src="images/abstract_best_25k_llava_symmetry_asymmetry_1_joan-mitchell_river-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: 3px; transform: rotate(3.190277592177903deg);">
+                <img src="images/abstract_best_35k_llava_symmetry_asymmetry_1_terry-frost_yellow-triptych-1959.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: -5px; transform: rotate(2.4566943606542857deg);">
+                <img src="images/abstract_best_25k_deepseek_balance_elements_lee-krasner_embrace-1974.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: 1px; transform: rotate(8.151509033311704deg);">
+                <img src="images/abstract_best_8k_deepseek_movement_morris-louis_untitled-1956.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: 3px; transform: rotate(1.3960060434482315deg);">
+                <img src="images/abstract_best_15k_cogvlm_proportion_walasse-ting_white-butterflies-sleep-on-a-violet-bed-1970.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: -1px; transform: rotate(-10.40277153425398deg);">
+                <img src="images/abstract_best_35k_cogvlm_proportion_friedel-dzubas_red-flight-1957.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: 0px; transform: rotate(-12.148345733274944deg);">
+                <img src="images/abstract_best_35k_cogvlm_proportion_sam-francis_untitled-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 3px; transform: rotate(4.019922757358554deg);">
+                <img src="images/abstract_best_8k_llava_symmetry_asymmetry_1_elaine-de-kooning_untitled-bull-1973.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 3px; top: 4px; transform: rotate(7.240945304449195deg);">
+                <img src="images/abstract_best_35k_cogvlm_symmetry_asymmetry_1_alexander-liberman_untitled-abstract-1975.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: -1px; transform: rotate(-3.3991173073409158deg);">
+                <img src="images/abstract_best_8k_llava_composition_joan-miro_not_detected_227950.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: -3px; transform: rotate(-3.876555221823919deg);">
+                <img src="images/abstract_best_15k_cogvlm_movement_henri-matisse_creole-dancer(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: 2px; transform: rotate(-4.701174360735308deg);">
+                <img src="images/abstract_best_8k_llava_foreground_background_4_cy-twombly_untitled-part-viii.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: 4px; transform: rotate(-4.523164092199879deg);">
+                <img src="images/abstract_best_8k_deepseek_foreground_background_4_cy-twombly_untitled-part-viii.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: -5px; transform: rotate(-7.131008318747129deg);">
+                <img src="images/abstract_best_35k_deepseek_foreground_background_4_joan-miro_not_detected_227950.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -4px; top: 5px; transform: rotate(12.406055005045104deg);">
+                <img src="images/abstract_best_8k_llava_eye_movement_2_sam-francis_all-red-1964.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: 1px; transform: rotate(-1.062052477784718deg);">
+                <img src="images/abstract_best_15k_deepseek_focus_point_paul-jenkins_not_detected_235727.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: -4px; transform: rotate(-11.122020066742769deg);">
+                <img src="images/abstract_best_8k_cogvlm_foreground_background_4_hans-hofmann_kaleidos-1958.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: 1px; transform: rotate(13.447852666487208deg);">
+                <img src="images/abstract_best_35k_deepseek_composition_henri-matisse_the-lagoon-1947.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: -5px; transform: rotate(-9.158929721648612deg);">
+                <img src="images/abstract_best_8k_deepseek_movement_alice-baber_wheel-of-day-1971.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: -3px; transform: rotate(1.5730329886369319deg);">
+                <img src="images/abstract_best_8k_cogvlm_focus_point_ronnie-landfield_sunday-afternoon-1969.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 2px; top: -3px; transform: rotate(-13.462439956773926deg);">
+                <img src="images/abstract_best_15k_cogvlm_eye_movement_2_terry-frost_variations-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: 4px; transform: rotate(10.14364550407748deg);">
+                <img src="images/abstract_best_8k_deepseek_movement_alexander-liberman_untitled-abstract-1975.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: 3px; transform: rotate(5.440511630202462deg);">
+                <img src="images/abstract_best_35k_cogvlm_contrast_elements_sam-gilliam_stand-1973.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: 3px; transform: rotate(-0.3045817197889722deg);">
+                <img src="images/abstract_best_8k_llava_foreground_background_4_hans-hofmann_kaleidos-1958.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: -1px; transform: rotate(-12.064537243118629deg);">
+                <img src="images/abstract_best_35k_deepseek_contrast_elements_jimmy-ernst_signifiant-event-note-1980.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: -1px; transform: rotate(9.364422619471565deg);">
+                <img src="images/abstract_best_35k_cogvlm_movement_terry-frost_yellow-triptych-1959.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: -2px; transform: rotate(-5.19503248550018deg);">
+                <img src="images/abstract_best_35k_llava_balance_elements_henri-matisse_the-lagoon-1947.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 5px; transform: rotate(9.333691079302817deg);">
+                <img src="images/abstract_best_25k_cogvlm_proportion_paul-reed_glm-2005.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: -5px; transform: rotate(6.603863502482032deg);">
+                <img src="images/abstract_best_8k_cogvlm_symmetry_asymmetry_1_henri-matisse_creole-dancer(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -5px; top: 2px; transform: rotate(-5.351843564384842deg);">
+                <img src="images/abstract_best_8k_cogvlm_balance_elements_jackson-pollock_moon-woman-1942(1).png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 4px; top: 3px; transform: rotate(-4.849959116679127deg);">
+                <img src="images/abstract_best_25k_cogvlm_composition_gerhard-richter_ludorff.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: -5px; transform: rotate(-9.956012474081913deg);">
+                <img src="images/abstract_best_35k_cogvlm_foreground_background_4_morris-louis_untitled-1956.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: 4px; transform: rotate(14.992582710698816deg);">
+                <img src="images/abstract_best_15k_llava_balance_elements_sam-francis_untitled-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -2px; top: -3px; transform: rotate(0.3805884007713285deg);">
+                <img src="images/abstract_best_25k_llava_proportion_paul-jenkins_not_detected_235696.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 5px; top: 1px; transform: rotate(7.027087658478557deg);">
+                <img src="images/abstract_best_35k_deepseek_symmetry_asymmetry_1_joan-mitchell_river-1989.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -3px; top: -2px; transform: rotate(12.547394233225155deg);">
+                <img src="images/abstract_best_25k_cogvlm_composition_cy-twombly_untitled-part-viii.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: -3px; transform: rotate(-3.1580139303600916deg);">
+                <img src="images/abstract_best_8k_llava_contrast_elements_alexander-liberman_untitled-abstract-1975.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 0px; top: -2px; transform: rotate(-13.120175764805934deg);">
+                <img src="images/abstract_best_15k_deepseek_focus_point_paul-reed_glm-2005.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: 1px; top: 2px; transform: rotate(-6.108339367795013deg);">
+                <img src="images/abstract_best_35k_deepseek_focus_point_sam-francis_all-red-1964.png" class="grid-item-img">
+            </div>
+        
+            <div class="grid-item" style="left: -1px; top: -4px; transform: rotate(9.019477899697687deg);">
+                <img src="images/abstract_best_8k_deepseek_proportion_frank-bowling_greenacross-i-2009.png" class="grid-item-img">
+            </div>
+        
+    </div>
+</body>
+</html>
