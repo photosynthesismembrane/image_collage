@@ -6,3 +6,5 @@ Run:
 ```
 python create_collage.py
 ```
+
+<img src="title_page_generated.png">
