@@ -4,7 +4,7 @@ from PIL import Image
 import numpy as np
 
 # Load image 
-image_path = "title_page.png"
+image_path = "title_page_offset_3.png"
 image = Image.open(image_path)
 
 # Get all image files from the folder
@@ -17,7 +17,6 @@ image_height = 792
 cell_size = 6  # Cell size set to 6x6 pixels
 num_columns = image_width // cell_size
 num_rows = image_height // cell_size
-threshold = 10
 
 # Randomly shuffle images
 random.shuffle(all_images)
@@ -69,6 +68,7 @@ html_content = f"""
             grid-gap: 0;
             width: {image_width}px;
             height: {image_height}px;
+            margin: 100px;
         }}
         .grid-item {{
             width: {cell_size}px;
@@ -124,7 +124,7 @@ html_content += """
 """
 
 # Define the file path for the output HTML file
-output_html_file = "index.html"  # Update with your desired output path
+output_html_file = "index_3.html"  # Update with your desired output path
 
 # Write the HTML content to the file
 with open(output_html_file, "w") as file:
