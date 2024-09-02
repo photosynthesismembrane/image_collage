@@ -95,7 +95,7 @@ for y in range(0, image_height, cell_size):
             offset_y = generate_random_offset()
             rotation = generate_random_rotation()
             size = generate_random_size()
-            z_index = size
+            z_index = random.randint(2, 128)
             black_pixel_count = count_black_pixels(x + offset_x, y + offset_y, size, rotation)
             if black_pixel_count == 0:
                 break
@@ -124,7 +124,7 @@ html_content += """
 """
 
 # Define the file path for the output HTML file
-output_html_file = "index_3.html"  # Update with your desired output path
+output_html_file = "index_6.html"  # Update with your desired output path
 
 # Write the HTML content to the file
 with open(output_html_file, "w") as file:

@@ -7,4 +7,4 @@ Run:
 python create_collage.py
 ```
 
-<img src="title_page_generated_3.png">
+<img src="front_page.png">
